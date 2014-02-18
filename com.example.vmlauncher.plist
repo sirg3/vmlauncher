@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.example.vmlauncher</string>
+    <!-- The virtual machine may take some time to suspend. Setting this value too low could lead to VMWare being forcibly killed during suspending. -->
+    <key>ExitTimeOut</key>
+    <integer>300</integer>
+    <!-- vmlauncher takes a single argument: the absolute path to the vmx file (not the vmwarevm bundle). -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/usr/local/bin/vmlauncher</string>
+        <string>/Volumes/Virtual Machines/Testing.vmwarevm/Testing.vmx</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+</dict>
+</plist>
